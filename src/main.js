@@ -4,3 +4,11 @@ var app = document.createElement('div');
 app.innerHTML = '<h1>Hello Webpack</h1>';
 app.appendChild(components());
 document.body.appendChild(app);
+$('h1').on('click', function() {
+	$(this).animate({
+		'font-size': 30,
+		'height': 50
+	},500, function() {
+		console.log('end');
+	});
+})
